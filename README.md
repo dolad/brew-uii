@@ -3,7 +3,7 @@ Progess:
 I was able to consume the api, 
 I was able to display the markers on the map,
 i was able to get list of breweries,
-![My Image](screenshot.png)
+![My Image](screenshot-image.png)
 
 # challenges:
 the api does not support united kingdom cities,
