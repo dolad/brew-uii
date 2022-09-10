@@ -14,19 +14,7 @@ interface ISearchProps {
 }
 
 
-const  MyFormHelperText = () : ReactElement => {
-    const { focused,  } = useFormControl() || {}; 
-    const helperText = React.useMemo(() => {
-    
-        if (focused) {
-        return 'This field is being filled';
-     }
- 
-     return 'Helper text';
-    }, [focused]);
-      
-        return <FormHelperText>{helperText}</FormHelperText>;
-}
+
 
 const Search : FC<ISearchProps> = ({setSearchValues, searchValues, setData})  =>  {
   const onChangeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -52,7 +40,7 @@ const Search : FC<ISearchProps> = ({setSearchValues, searchValues, setData})  =>
         </InputAdornment>
       }
       placeholder="Enter your Location" value={searchValues} onChange={onChangeHandler} onKeyPress={onPressHandler}/>
-      <MyFormHelperText />
+  
     </FormControl>
   </Box>
   )

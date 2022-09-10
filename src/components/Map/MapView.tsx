@@ -7,10 +7,6 @@ type IMapProps = {
 
 
 const MapView: FC<IMapProps> = ({data}) => {
-  data && data.length > 0 && data.map((item:any, index:number) => {
-    console.log(parseFloat(item.latitude))
-    console.log(parseFloat(item.longitude))
-  })
   return (
     <Map height={400} defaultCenter={[44.08683530625218, -121.28170597038259]} defaultZoom={11}>
       
